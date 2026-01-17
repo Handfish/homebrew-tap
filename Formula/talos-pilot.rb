@@ -1,25 +1,25 @@
 class TalosPilot < Formula
   desc "A terminal UI for managing and monitoring Talos Linux Kubernetes clusters"
   homepage "https://github.com/Handfish/talos-pilot"
-  version "0.1.6"
+  version "0.1.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.6/talos-pilot-aarch64-apple-darwin.tar.xz"
-      sha256 "f69a87f7e216d1e2620e2797d1605d236a5a627da2ff0e857e3be0f50ee3a9d2"
+      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.7/talos-pilot-aarch64-apple-darwin.tar.xz"
+      sha256 "be52730b90dca7c90285e11ce0f4e087ec2fc38784d31f5bd8a372117739aafb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.6/talos-pilot-x86_64-apple-darwin.tar.xz"
-      sha256 "a280ea1741afd9993a0483a3517b6be34874a5c85b46b844507ffe55ced9a7bb"
+      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.7/talos-pilot-x86_64-apple-darwin.tar.xz"
+      sha256 "af93b44e44844ede03fd354131c6d1d2e26931a00906b180bc04a2575358f2d6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.6/talos-pilot-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d61a7087583c1b27b4e2de73f84ece81f0904c382263a1478b8ad16ebb569a46"
+      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.7/talos-pilot-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e85b84311fd35f1ecbd1936793665a17b5f1f69732162084c6ce9f0f5d24940b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.6/talos-pilot-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8b738704210685e2882ff449cb49258959a046c83192fb1e28c5f043fad5e489"
+      url "https://github.com/Handfish/talos-pilot/releases/download/v0.1.7/talos-pilot-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4a6628411d87d19aa1ff3a0d31203296c6bbfe59274b9bd2620eb9e7c8292508"
     end
   end
   license "MIT"
